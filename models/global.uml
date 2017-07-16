@@ -252,30 +252,21 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zjS44Gk-EeeC1vVTHOWQSA" name="InBa" visibility="public">
       <interfaceRealization xmi:id="_HaYYEGk_EeeC1vVTHOWQSA" client="_zjS44Gk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_1Mj8wGk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_12lxMGk-EeeC1vVTHOWQSA" name="Locked" visibility="public">
       <interfaceRealization xmi:id="_R37VAGk_EeeC1vVTHOWQSA" client="_12lxMGk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_12lxMWk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2hxcMGk-EeeC1vVTHOWQSA" name="Playable" visibility="public">
       <interfaceRealization xmi:id="_UrK4sGk_EeeC1vVTHOWQSA" client="_2hxcMGk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_2hxcMWk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_3L-20Gk-EeeC1vVTHOWQSA" name="InDeck" visibility="public">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_3L-20Wk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
-      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3a740Gk-EeeC1vVTHOWQSA" name="Activated" visibility="public">
       <interfaceRealization xmi:id="_aZBzYGk_EeeC1vVTHOWQSA" client="_3a740Gk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_3a740Wk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_5r85MGk-EeeC1vVTHOWQSA" name="Selected" visibility="public">
       <interfaceRealization xmi:id="_rar9kGk_EeeC1vVTHOWQSA" client="_5r85MGk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_5r85MWk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7hk-EGk-EeeC1vVTHOWQSA" name="Scored" visibility="public">
       <interfaceRealization xmi:id="_vPazcGk_EeeC1vVTHOWQSA" client="_7hk-EGk-EeeC1vVTHOWQSA" supplier="_8MTykGk9EeeC1vVTHOWQSA" contract="_8MTykGk9EeeC1vVTHOWQSA"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_7hk-EWk-EeeC1vVTHOWQSA" name="InDeck" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_FV47UGlAEeeC1vVTHOWQSA" name="CardEvent" visibility="public">
       <ownedOperation xmi:id="_PbDNcGlAEeeC1vVTHOWQSA" name="addCardListener">
@@ -291,82 +282,82 @@
         <ownedParameter xmi:id="_zGwb8GlAEeeC1vVTHOWQSA" name="c" type="_eThaYGk8EeeC1vVTHOWQSA"/>
       </ownedOperation>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_hvej4Gk8EeeC1vVTHOWQSA" name="Suit" visibility="public">
-    <ownedLiteral xmi:id="_i9PXgGk8EeeC1vVTHOWQSA" name="January"/>
-    <ownedLiteral xmi:id="_qHsMAGk8EeeC1vVTHOWQSA" name="February">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_qHsMAWk8EeeC1vVTHOWQSA" value="1"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_ro45AGk8EeeC1vVTHOWQSA" name="March">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_ro45AWk8EeeC1vVTHOWQSA" value="2"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_soR5cGk8EeeC1vVTHOWQSA" name="April">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_soSggGk8EeeC1vVTHOWQSA" value="3"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_tprFAGk8EeeC1vVTHOWQSA" name="May">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_tprFAWk8EeeC1vVTHOWQSA" value="4"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_ukCbgGk8EeeC1vVTHOWQSA" name="June">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_ukCbgWk8EeeC1vVTHOWQSA" value="5"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_wK9WAGk8EeeC1vVTHOWQSA" name="July">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_wK99EGk8EeeC1vVTHOWQSA" value="6"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_xTNXgGk8EeeC1vVTHOWQSA" name="August">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_xTN-kGk8EeeC1vVTHOWQSA" value="7"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_yum-gGk8EeeC1vVTHOWQSA" name="September">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_yunlkGk8EeeC1vVTHOWQSA" value="8"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_zwrfgGk8EeeC1vVTHOWQSA" name="October">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_zwrfgWk8EeeC1vVTHOWQSA" value="9"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_08qxgGk8EeeC1vVTHOWQSA" name="November">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_08rYkGk8EeeC1vVTHOWQSA" value="10"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_2KkIAGk8EeeC1vVTHOWQSA" name="December">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_2KkIAWk8EeeC1vVTHOWQSA" value="11"/>
-    </ownedLiteral>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_7xcQ8Gk8EeeC1vVTHOWQSA" name="Yaku" visibility="public">
-    <ownedLiteral xmi:id="_BTZdoGk9EeeC1vVTHOWQSA" name="Gokou">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_BTaEsGk9EeeC1vVTHOWQSA"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_DGfy8Gk9EeeC1vVTHOWQSA" name="Shikou">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_DGfy8Wk9EeeC1vVTHOWQSA" value="1"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_EPk64Gk9EeeC1vVTHOWQSA" name="Ameshikou">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_EPk64Wk9EeeC1vVTHOWQSA" value="2"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_FnE5UGk9EeeC1vVTHOWQSA" name="Sankou">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_FnE5UWk9EeeC1vVTHOWQSA" value="3"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_HftO4Gk9EeeC1vVTHOWQSA" name="Hanamideippai">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_HftO4Wk9EeeC1vVTHOWQSA" value="4"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_KBgdQGk9EeeC1vVTHOWQSA" name="Tsukimideippai">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_KBgdQWk9EeeC1vVTHOWQSA" value="5"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_MvREAGk9EeeC1vVTHOWQSA" name="Inoshikachou">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_MvRrEGk9EeeC1vVTHOWQSA" value="6"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_PoNnEGk9EeeC1vVTHOWQSA" name="AkatanAotan">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_PoNnEWk9EeeC1vVTHOWQSA" value="7"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_RQUNUGk9EeeC1vVTHOWQSA" name="Akatan">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_RQUNUWk9EeeC1vVTHOWQSA" value="8"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_SsyyYGk9EeeC1vVTHOWQSA" name="Aotan">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_SsyyYWk9EeeC1vVTHOWQSA" value="9"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_UsA4IGk9EeeC1vVTHOWQSA" name="Tanzaku">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_UsA4IWk9EeeC1vVTHOWQSA" value="10"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_WGOzYGk9EeeC1vVTHOWQSA" name="Tane">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_WGOzYWk9EeeC1vVTHOWQSA" value="11"/>
-    </ownedLiteral>
-    <ownedLiteral xmi:id="_XXHMcGk9EeeC1vVTHOWQSA" name="Kasu">
-      <specification xmi:type="uml:LiteralInteger" xmi:id="_XXHMcWk9EeeC1vVTHOWQSA" value="12"/>
-    </ownedLiteral>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hvej4Gk8EeeC1vVTHOWQSA" name="Suit" visibility="public">
+      <ownedLiteral xmi:id="_i9PXgGk8EeeC1vVTHOWQSA" name="January"/>
+      <ownedLiteral xmi:id="_qHsMAGk8EeeC1vVTHOWQSA" name="February">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_qHsMAWk8EeeC1vVTHOWQSA" value="1"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ro45AGk8EeeC1vVTHOWQSA" name="March">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_ro45AWk8EeeC1vVTHOWQSA" value="2"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_soR5cGk8EeeC1vVTHOWQSA" name="April">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_soSggGk8EeeC1vVTHOWQSA" value="3"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_tprFAGk8EeeC1vVTHOWQSA" name="May">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_tprFAWk8EeeC1vVTHOWQSA" value="4"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ukCbgGk8EeeC1vVTHOWQSA" name="June">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_ukCbgWk8EeeC1vVTHOWQSA" value="5"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_wK9WAGk8EeeC1vVTHOWQSA" name="July">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_wK99EGk8EeeC1vVTHOWQSA" value="6"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_xTNXgGk8EeeC1vVTHOWQSA" name="August">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_xTN-kGk8EeeC1vVTHOWQSA" value="7"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_yum-gGk8EeeC1vVTHOWQSA" name="September">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_yunlkGk8EeeC1vVTHOWQSA" value="8"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_zwrfgGk8EeeC1vVTHOWQSA" name="October">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_zwrfgWk8EeeC1vVTHOWQSA" value="9"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_08qxgGk8EeeC1vVTHOWQSA" name="November">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_08rYkGk8EeeC1vVTHOWQSA" value="10"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_2KkIAGk8EeeC1vVTHOWQSA" name="December">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_2KkIAWk8EeeC1vVTHOWQSA" value="11"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7xcQ8Gk8EeeC1vVTHOWQSA" name="Yaku" visibility="public">
+      <ownedLiteral xmi:id="_BTZdoGk9EeeC1vVTHOWQSA" name="Gokou">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_BTaEsGk9EeeC1vVTHOWQSA"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_DGfy8Gk9EeeC1vVTHOWQSA" name="Shikou">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_DGfy8Wk9EeeC1vVTHOWQSA" value="1"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_EPk64Gk9EeeC1vVTHOWQSA" name="Ameshikou">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_EPk64Wk9EeeC1vVTHOWQSA" value="2"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_FnE5UGk9EeeC1vVTHOWQSA" name="Sankou">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_FnE5UWk9EeeC1vVTHOWQSA" value="3"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_HftO4Gk9EeeC1vVTHOWQSA" name="Hanamideippai">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_HftO4Wk9EeeC1vVTHOWQSA" value="4"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_KBgdQGk9EeeC1vVTHOWQSA" name="Tsukimideippai">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_KBgdQWk9EeeC1vVTHOWQSA" value="5"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_MvREAGk9EeeC1vVTHOWQSA" name="Inoshikachou">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_MvRrEGk9EeeC1vVTHOWQSA" value="6"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_PoNnEGk9EeeC1vVTHOWQSA" name="AkatanAotan">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_PoNnEWk9EeeC1vVTHOWQSA" value="7"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_RQUNUGk9EeeC1vVTHOWQSA" name="Akatan">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_RQUNUWk9EeeC1vVTHOWQSA" value="8"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_SsyyYGk9EeeC1vVTHOWQSA" name="Aotan">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_SsyyYWk9EeeC1vVTHOWQSA" value="9"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_UsA4IGk9EeeC1vVTHOWQSA" name="Tanzaku">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_UsA4IWk9EeeC1vVTHOWQSA" value="10"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_WGOzYGk9EeeC1vVTHOWQSA" name="Tane">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_WGOzYWk9EeeC1vVTHOWQSA" value="11"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_XXHMcGk9EeeC1vVTHOWQSA" name="Kasu">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_XXHMcWk9EeeC1vVTHOWQSA" value="12"/>
+      </ownedLiteral>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
