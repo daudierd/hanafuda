@@ -3,8 +3,7 @@
  *******************************************************************************/
 package card;
 
-import card.CardState;
-// Start of user code (user defined imports)
+import player.Player;
 
 // End of user code
 
@@ -79,30 +78,4 @@ public class InBa implements CardState {
 	// Start of user code (user defined methods for InBa)
 
 	// End of user code
-
-	/**
-	 * Description of InDeck.
-	 * 
-	 * @author Dorian
-	 */
-	public class InDeck {
-		// Start of user code (user defined attributes for InDeck)
-
-		// End of user code
-
-		/**
-		 * The constructor.
-		 */
-		public InDeck() {
-			// Start of user code constructor for InDeck)
-			super();
-			// End of user code
-		}
-
-		// Start of user code (user defined methods for InDeck)
-
-		// End of user code
-
-	}
-
 }

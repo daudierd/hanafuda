@@ -3,8 +3,9 @@
  *******************************************************************************/
 package player;
 
-import player.Player;
-// Start of user code (user defined imports)
+import java.util.HashSet;
+
+import card.Card;
 
 // End of user code
 
@@ -17,7 +18,7 @@ public abstract class AbsPlayer implements Player {
 	/**
 	 * Description of the property cards.
 	 */
-	public HashSet<Card> cards = new HashSet<Card>();
+	public HashSet<Card> hand = new HashSet<Card>();
 
 	/**
 	 * Description of the property name.
@@ -32,7 +33,7 @@ public abstract class AbsPlayer implements Player {
 	/**
 	 * Description of the property cards.
 	 */
-	public HashSet<Card> cards = new HashSet<Card>();
+	public HashSet<Card> wonCards = new HashSet<Card>();
 
 	// Start of user code (user defined attributes for AbsPlayer)
 
@@ -92,7 +93,9 @@ public abstract class AbsPlayer implements Player {
 
 	/**
 	 * Description of the method getScore.
+	 * @return score 
 	 */
+	@Override
 	public void getScore() {
 		// Start of user code for method getScore
 		// End of user code
@@ -105,8 +108,8 @@ public abstract class AbsPlayer implements Player {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getCards() {
-		return this.cards;
+	public HashSet<Card> getHand() {
+		return this.hand;
 	}
 
 	/**
@@ -126,14 +129,6 @@ public abstract class AbsPlayer implements Player {
 	}
 
 	/**
-	 * Returns score.
-	 * @return score 
-	 */
-	public String getScore() {
-		return this.score;
-	}
-
-	/**
 	 * Sets a value to attribute score. 
 	 * @param newScore 
 	 */
@@ -145,8 +140,8 @@ public abstract class AbsPlayer implements Player {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getCards() {
-		return this.cards;
+	public HashSet<Card> getWonCards() {
+		return this.wonCards;
 	}
 
 }

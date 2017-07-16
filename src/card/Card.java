@@ -3,10 +3,9 @@
  *******************************************************************************/
 package card;
 
-import Suit;
-import card.CardEvent;
-import card.CardState;
-// Start of user code (user defined imports)
+import java.util.HashSet;
+
+import player.Player;
 
 // End of user code
 
@@ -118,14 +117,6 @@ public class Card implements CardState, CardEvent {
 	 */
 	public void removeCardListener(CardListener l) {
 		// Start of user code for method removeCardListener
-		// End of user code
-	}
-
-	/**
-	 * Description of the method select.
-	 */
-	public void select() {
-		// Start of user code for method select
 		// End of user code
 	}
 

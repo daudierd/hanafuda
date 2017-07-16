@@ -3,8 +3,10 @@
  *******************************************************************************/
 package game;
 
-import card.CardListener;
 import java.util.HashSet;
+
+import card.Card;
+import card.CardListener;
 import player.Player;
 // Start of user code (user defined imports)
 
@@ -29,12 +31,12 @@ public class Game implements CardListener {
 	/**
 	 * Description of the property cards.
 	 */
-	public HashSet<Card> cards = new HashSet<Card>();
+	public HashSet<Card> deck = new HashSet<Card>();
 
 	/**
 	 * Description of the property cards.
 	 */
-	public HashSet<Card> cards = new HashSet<Card>();
+	public HashSet<Card> ba = new HashSet<Card>();
 
 	/**
 	 * Description of the property bas.
@@ -142,16 +144,16 @@ public class Game implements CardListener {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getCards() {
-		return this.cards;
+	public HashSet<Card> getDeckCards() {
+		return this.deck;
 	}
 
 	/**
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getCards() {
-		return this.cards;
+	public HashSet<Card> getBaCards() {
+		return this.ba;
 	}
 
 	/**
@@ -167,10 +169,7 @@ public class Game implements CardListener {
 	 * @param newBas 
 	 */
 	public void setBas(Ba newBas) {
-		if (this.bas != null) {
-			this.bas.set(null);
-		}
-		this.bas.set(this);
+		//TODO
 	}
 
 	/**
@@ -186,10 +185,7 @@ public class Game implements CardListener {
 	 * @param newDecks 
 	 */
 	public void setDecks(Deck newDecks) {
-		if (this.decks != null) {
-			this.decks.set(null);
-		}
-		this.decks.set(this);
+		//TODO
 	}
 
 	/**

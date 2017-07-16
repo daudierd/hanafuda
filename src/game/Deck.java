@@ -3,6 +3,10 @@
  *******************************************************************************/
 package game;
 
+import java.util.HashSet;
+
+import card.Card;
+
 // Start of user code (user defined imports)
 
 // End of user code

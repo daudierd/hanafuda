@@ -3,7 +3,7 @@
  *******************************************************************************/
 package card;
 
-import card.CardState;
+import player.Player;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -74,85 +74,6 @@ public class Playable implements CardState {
 	public void lock() {
 		// Start of user code for method lock
 		// End of user code
-	}
-
-	// Start of user code (user defined methods for Playable)
-
-	// End of user code
-
-	/**
-	 * Description of InDeck.
-	 * 
-	 * @author Dorian
-	 */
-	public class InDeck {
-		// Start of user code (user defined attributes for InDeck)
-
-		// End of user code
-
-		/**
-		 * The constructor.
-		 */
-		public InDeck() {
-			// Start of user code constructor for InDeck)
-			super();
-			// End of user code
-		}
-
-		// Start of user code (user defined methods for InDeck)
-
-		// End of user code
-
-	}
-
-	/**
-	 * Description of InDeck.
-	 * 
-	 * @author Dorian
-	 */
-	public class InDeck {
-		// Start of user code (user defined attributes for InDeck)
-
-		// End of user code
-
-		/**
-		 * The constructor.
-		 */
-		public InDeck() {
-			// Start of user code constructor for InDeck)
-			super();
-			// End of user code
-		}
-
-		// Start of user code (user defined methods for InDeck)
-
-		// End of user code
-
-		/**
-		 * Description of InDeck.
-		 * 
-		 * @author Dorian
-		 */
-		public class InDeck {
-			// Start of user code (user defined attributes for InDeck)
-
-			// End of user code
-
-			/**
-			 * The constructor.
-			 */
-			public InDeck() {
-				// Start of user code constructor for InDeck)
-				super();
-				// End of user code
-			}
-
-			// Start of user code (user defined methods for InDeck)
-
-			// End of user code
-
-		}
-
 	}
 
 }

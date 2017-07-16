@@ -3,8 +3,9 @@
  *******************************************************************************/
 package game;
 
-import game.ScoreEvent;
-// Start of user code (user defined imports)
+import java.util.HashSet;
+
+import card.Card;
 
 // End of user code
 

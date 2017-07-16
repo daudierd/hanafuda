@@ -3,8 +3,7 @@
  *******************************************************************************/
 package card;
 
-import card.CardState;
-// Start of user code (user defined imports)
+import player.Player;
 
 // End of user code
 
