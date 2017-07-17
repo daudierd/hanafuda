@@ -101,6 +101,14 @@ public class Card implements CardState, CardEvent {
 		// Start of user code for method lock
 		// End of user code
 	}
+	
+	/**
+	 * Description of the method putBack.
+	 */
+	public void putBack() {
+		// Start of user code for method lock
+		// End of user code
+	}
 
 	/**
 	 * Description of the method addCardListener.
@@ -194,5 +202,4 @@ public class Card implements CardState, CardEvent {
 	public void setId(int newId) {
 		this.id = newId;
 	}
-
 }

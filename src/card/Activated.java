@@ -75,6 +75,14 @@ public class Activated implements CardState {
 		// Start of user code for method lock
 		// End of user code
 	}
+	
+	/**
+	 * Description of the method putBack.
+	 */
+	public void putBack() {
+		// Start of user code for method lock
+		// End of user code
+	}
 
 	// Start of user code (user defined methods for Activated)
 

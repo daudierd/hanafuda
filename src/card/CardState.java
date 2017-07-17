@@ -48,6 +48,12 @@ public interface CardState {
 	 * Description of the method lock.
 	 */
 	public void lock();
+	
+	/**
+	 * Description of the method putBack.
+	 */
+	public void putBack();
+
 
 	// Start of user code (user defined methods for CardState)
 
