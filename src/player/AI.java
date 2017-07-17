@@ -20,11 +20,20 @@ public class AI extends AbsPlayer {
 	// End of user code
 
 	/**
-	 * The constructor.
+	 * Default constructor.
 	 */
 	public AI() {
 		// Start of user code constructor for AI)
 		super();
+		// End of user code
+	}
+	
+	/**
+	 * Overloaded constructor.
+	 */
+	public AI(String name) {
+		// Start of user code constructor for AI)
+		super(name);
 		// End of user code
 	}
 
@@ -45,6 +54,23 @@ public class AI extends AbsPlayer {
 		// End of user code
 	}
 
+	/**
+	 * Description of the method pickCard.
+	 */
+	public void pickCard() {
+		// Start of user code for method pickCard
+		// End of user code
+	}
+
+	/**
+	 * Description of the method matchCard.
+	 * @param c 
+	 */
+	public void matchCard(Card c) {
+		// Start of user code for method matchCard
+		// End of user code
+	}
+	
 	// Start of user code (user defined methods for AI)
 
 	// End of user code

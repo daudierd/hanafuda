@@ -3,7 +3,8 @@
  *******************************************************************************/
 package player;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import card.Card;
 
@@ -15,34 +16,38 @@ import card.Card;
  * @author Dorian
  */
 public abstract class AbsPlayer implements Player {
-	/**
-	 * Description of the property cards.
-	 */
-	public HashSet<Card> hand = new HashSet<Card>();
+	/** Number of players instantiated */
+	private static int nbPlayers = 0;
+	
+	/** Name given to the player. */
+	private String name;
 
-	/**
-	 * Description of the property name.
-	 */
-	public String name = "";
+	/** Current score of the player. */
+	private int score;
 
-	/**
-	 * Description of the property score.
-	 */
-	public String score = "";
-
-	/**
-	 * Description of the property cards.
-	 */
-	public HashSet<Card> wonCards = new HashSet<Card>();
+	/** List of the cards in the player's hand. */
+	private List<Card> hand = new ArrayList<Card>();
+	
+	/** List of the cards that the player has won. */
+	private List<Card> wonCards = new ArrayList<Card>();
 
 	// Start of user code (user defined attributes for AbsPlayer)
 
 	// End of user code
 
 	/**
-	 * The constructor.
+	 * Default constructor.
 	 */
 	public AbsPlayer() {
+		// Start of user code constructor for AbsPlayer)
+		super();
+		// End of user code
+	}
+	
+	/**
+	 * Overloaded constructor.
+	 */
+	public AbsPlayer(String name) {
 		// Start of user code constructor for AbsPlayer)
 		super();
 		// End of user code
@@ -51,19 +56,13 @@ public abstract class AbsPlayer implements Player {
 	/**
 	 * Description of the method pickCard.
 	 */
-	public void pickCard() {
-		// Start of user code for method pickCard
-		// End of user code
-	}
+	public abstract void pickCard();
 
 	/**
 	 * Description of the method matchCard.
 	 * @param c 
 	 */
-	public void matchCard(Card c) {
-		// Start of user code for method matchCard
-		// End of user code
-	}
+	public abstract void matchCard(Card c);
 
 	/**
 	 * Description of the method lockCards.
@@ -108,7 +107,7 @@ public abstract class AbsPlayer implements Player {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getHand() {
+	public List<Card> getHand() {
 		return this.hand;
 	}
 
@@ -132,7 +131,7 @@ public abstract class AbsPlayer implements Player {
 	 * Sets a value to attribute score. 
 	 * @param newScore 
 	 */
-	public void setScore(String newScore) {
+	public void setScore(int newScore) {
 		this.score = newScore;
 	}
 
@@ -140,7 +139,7 @@ public abstract class AbsPlayer implements Player {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getWonCards() {
+	public List<Card> getWonCards() {
 		return this.wonCards;
 	}
 

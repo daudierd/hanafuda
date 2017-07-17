@@ -3,6 +3,7 @@
  *******************************************************************************/
 package player;
 
+import card.Card;
 import player.AbsPlayer;
 // Start of user code (user defined imports)
 
@@ -19,11 +20,37 @@ public class RealPlayer extends AbsPlayer {
 	// End of user code
 
 	/**
-	 * The constructor.
+	 * Default constructor.
 	 */
 	public RealPlayer() {
 		// Start of user code constructor for RealPlayer)
 		super();
+		// End of user code
+	}
+	
+	/**
+	 * Overloaded constructor.
+	 */
+	public RealPlayer(String name) {
+		// Start of user code constructor for RealPlayer)
+		super(name);
+		// End of user code
+	}
+
+	/**
+	 * Description of the method pickCard.
+	 */
+	public void pickCard() {
+		// Start of user code for method pickCard
+		// End of user code
+	}
+
+	/**
+	 * Description of the method matchCard.
+	 * @param c 
+	 */
+	public void matchCard(Card c) {
+		// Start of user code for method matchCard
 		// End of user code
 	}
 
