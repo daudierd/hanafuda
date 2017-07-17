@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import card.Card;
+import game.Scoreboard;
 
 // End of user code
 
@@ -27,9 +28,12 @@ public abstract class AbsPlayer implements Player {
 
 	/** List of the cards in the player's hand. */
 	private List<Card> hand = new ArrayList<Card>();
-	
+
 	/** List of the cards that the player has won. */
 	private List<Card> wonCards = new ArrayList<Card>();
+
+	/** Current scoreboard of the player. */
+	private Scoreboard scoreboard;
 
 	// Start of user code (user defined attributes for AbsPlayer)
 
@@ -126,7 +130,7 @@ public abstract class AbsPlayer implements Player {
 	public void setName(String newName) {
 		this.name = newName;
 	}
-
+	
 	/**
 	 * Sets a value to attribute score. 
 	 * @param newScore 
@@ -141,6 +145,22 @@ public abstract class AbsPlayer implements Player {
 	 */
 	public List<Card> getWonCards() {
 		return this.wonCards;
+	}
+	
+	/**
+	 * Returns scoreboard.
+	 * @return scoreboard 
+	 */
+	public Scoreboard getScoreboard() {
+		return this.scoreboard;
+	}
+
+	/**
+	 * Sets a value to attribute scoreboard. 
+	 * @param newScoreboard 
+	 */
+	public void setScoreboard(Scoreboard newScoreboard) {
+		this.scoreboard = newScoreboard;
 	}
 
 }
