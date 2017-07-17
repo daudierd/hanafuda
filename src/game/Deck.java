@@ -3,7 +3,9 @@
  *******************************************************************************/
 package game;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 import card.Card;
 
@@ -20,7 +22,7 @@ public class Deck {
 	/**
 	 * Description of the property cards.
 	 */
-	public HashSet<Card> cards = new HashSet<Card>();
+	public List<Card> cards = new ArrayList<Card>();
 
 	// Start of user code (user defined attributes for Deck)
 
@@ -66,7 +68,7 @@ public class Deck {
 	 * Returns cards.
 	 * @return cards 
 	 */
-	public HashSet<Card> getCards() {
+	public List<Card> getCards() {
 		return this.cards;
 	}
 

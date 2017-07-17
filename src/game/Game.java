@@ -3,7 +3,9 @@
  *******************************************************************************/
 package game;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Semaphore;
 
 import card.Card;
 import card.CardListener;
@@ -18,45 +20,26 @@ import player.Player;
  * @author Dorian
  */
 public class Game implements CardListener {
-	/**
-	 * Description of the property cardSelection.
-	 */
-	public HashSet<String> cardSelection = new HashSet<String>();
-
-	/**
-	 * Description of the property players.
-	 */
-	public HashSet<Player> players = new HashSet<Player>();
-
-	/**
-	 * Description of the property cards.
-	 */
-	public HashSet<Card> deck = new HashSet<Card>();
-
-	/**
-	 * Description of the property cards.
-	 */
-	public HashSet<Card> ba = new HashSet<Card>();
-
-	/**
-	 * Description of the property bas.
-	 */
-	public Ba bas = null;
-
-	/**
-	 * Description of the property decks.
-	 */
-	public Deck decks = null;
-
-	/**
-	 * Description of the property currentPlayer.
-	 */
+	/** List of the cards that make up the game. */
+	public List<Card> cards = new ArrayList<Card>();
+	
+	/** Deck used in the game. */
+	public Deck deck = null;
+	
+	/** Ba used in the game. */
+	public Ba ba = null;
+	
+	/** Players that participate in the game. */
+	public List<Player> players = new ArrayList<Player>();
+	
+	/** Cards that are currently selected in the game. */
+	public List<Card> cardSelection = new ArrayList<Card>();
+	
+	/** Current player whose turn is being played. */
 	public Player currentPlayer = null;
 
-	/**
-	 * Description of the property lock.
-	 */
-	public Boolean lock = Boolean.FALSE;
+	/** Semaphore used to pause the game while it waits for a card selection. */
+	public Semaphore pause = new Semaphore(1);
 
 	// Start of user code (user defined attributes for Game)
 
@@ -128,7 +111,7 @@ public class Game implements CardListener {
 	 * Returns cardSelection.
 	 * @return cardSelection 
 	 */
-	public HashSet<String> getCardSelection() {
+	public List<Card> getCardSelection() {
 		return this.cardSelection;
 	}
 
@@ -136,55 +119,39 @@ public class Game implements CardListener {
 	 * Returns players.
 	 * @return players 
 	 */
-	public HashSet<Player> getPlayers() {
+	public List<Player> getPlayers() {
 		return this.players;
 	}
 
 	/**
-	 * Returns cards.
-	 * @return cards 
+	 * Returns ba.
+	 * @return ba 
 	 */
-	public HashSet<Card> getDeckCards() {
-		return this.deck;
-	}
-
-	/**
-	 * Returns cards.
-	 * @return cards 
-	 */
-	public HashSet<Card> getBaCards() {
+	public Ba getBa() {
 		return this.ba;
 	}
 
 	/**
-	 * Returns bas.
-	 * @return bas 
+	 * Sets a value to attribute ba. 
+	 * @param newBa 
 	 */
-	public Ba getBas() {
-		return this.bas;
-	}
-
-	/**
-	 * Sets a value to attribute bas. 
-	 * @param newBas 
-	 */
-	public void setBas(Ba newBas) {
+	public void setBa(Ba newBa) {
 		//TODO
 	}
 
 	/**
-	 * Returns decks.
-	 * @return decks 
+	 * Returns deck.
+	 * @return deck 
 	 */
-	public Deck getDecks() {
-		return this.decks;
+	public Deck getDeck() {
+		return this.deck;
 	}
 
 	/**
 	 * Sets a value to attribute decks. 
-	 * @param newDecks 
+	 * @param newDeck 
 	 */
-	public void setDecks(Deck newDecks) {
+	public void setDecks(Deck newDeck) {
 		//TODO
 	}
 
@@ -203,21 +170,4 @@ public class Game implements CardListener {
 	public void setCurrentPlayer(Player newCurrentPlayer) {
 		this.currentPlayer = newCurrentPlayer;
 	}
-
-	/**
-	 * Returns lock.
-	 * @return lock 
-	 */
-	public Boolean getLock() {
-		return this.lock;
-	}
-
-	/**
-	 * Sets a value to attribute lock. 
-	 * @param newLock 
-	 */
-	public void setLock(Boolean newLock) {
-		this.lock = newLock;
-	}
-
 }
