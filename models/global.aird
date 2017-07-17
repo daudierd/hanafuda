@@ -1003,6 +1003,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bcUZKmn_EeemlvUik5kJvg" id="(0.047619047619047616,0.85)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bcUZK2n_EeemlvUik5kJvg" id="(0.9761904761904762,0.4421768707482993)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Tpai0GrWEeeEGMLZsloISA" type="4001" element="_TiATQGrWEeeEGMLZsloISA" source="_RccaQGk8EeeC1vVTHOWQSA" target="_qUgcwGn8EeemlvUik5kJvg">
+          <children xmi:type="notation:Node" xmi:id="_TpnXIGrWEeeEGMLZsloISA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TpnXIWrWEeeEGMLZsloISA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_TppMUGrWEeeEGMLZsloISA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TppMUWrWEeeEGMLZsloISA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_TppzYGrWEeeEGMLZsloISA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TppzYWrWEeeEGMLZsloISA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Tpai0WrWEeeEGMLZsloISA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Tpai0mrWEeeEGMLZsloISA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tpai02rWEeeEGMLZsloISA" points="[0, 0, 122, -85]$[-122, 85, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TprokGrWEeeEGMLZsloISA" id="(0.0,0.1836734693877551)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TprokWrWEeeEGMLZsloISA" id="(1.0,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_w85lwGk7EeeC1vVTHOWQSA" name="game" tooltipText="NewModel::game" width="12" height="10">
@@ -1177,7 +1193,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Operation']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qQuwAGn8EeemlvUik5kJvg" name="Scoreboard" tooltipText="NewModel::game::Scoreboard" outgoingEdges="_P0MxYGn9EeemlvUik5kJvg _ZNAT0Gn9EeemlvUik5kJvg" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qQuwAGn8EeemlvUik5kJvg" name="Scoreboard" tooltipText="NewModel::game::Scoreboard" outgoingEdges="_P0MxYGn9EeemlvUik5kJvg _ZNAT0Gn9EeemlvUik5kJvg" incomingEdges="_TiATQGrWEeeEGMLZsloISA" width="12" height="10">
         <target xmi:type="uml:Class" href="global.uml#_pp1IEGn8EeemlvUik5kJvg"/>
         <semanticElements xmi:type="uml:Class" href="global.uml#_pp1IEGn8EeemlvUik5kJvg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1308,7 +1324,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Operation']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Rb6OwGk8EeeC1vVTHOWQSA" name="AbsPlayer" tooltipText="NewModel::player::AbsPlayer" outgoingEdges="_U1KpkGk8EeeC1vVTHOWQSA _SLAl0Gn_EeemlvUik5kJvg _bYfpEGn_EeemlvUik5kJvg" incomingEdges="_Vl14kGk8EeeC1vVTHOWQSA _YfeYIGk8EeeC1vVTHOWQSA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Rb6OwGk8EeeC1vVTHOWQSA" name="AbsPlayer" tooltipText="NewModel::player::AbsPlayer" outgoingEdges="_U1KpkGk8EeeC1vVTHOWQSA _SLAl0Gn_EeemlvUik5kJvg _bYfpEGn_EeemlvUik5kJvg _TiATQGrWEeeEGMLZsloISA" incomingEdges="_Vl14kGk8EeeC1vVTHOWQSA _YfeYIGk8EeeC1vVTHOWQSA" width="12" height="10">
         <target xmi:type="uml:Class" href="global.uml#_QIFPYGk8EeeC1vVTHOWQSA"/>
         <semanticElements xmi:type="uml:Class" href="global.uml#_QIFPYGk8EeeC1vVTHOWQSA"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2126,6 +2142,18 @@
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_bYfpEmn_EeemlvUik5kJvg" showIcon="false"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_bYfpE2n_EeemlvUik5kJvg" showIcon="false"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_bYfpFGn_EeemlvUik5kJvg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Association']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_TiATQGrWEeeEGMLZsloISA" name="A_absPlayers_scoreboards" sourceNode="_Rb6OwGk8EeeC1vVTHOWQSA" targetNode="_qQuwAGn8EeemlvUik5kJvg" beginLabel="absPlayers[0..1]" endLabel="scoreboards[*]">
+      <target xmi:type="uml:Association" href="global.uml#_TgQm0GrWEeeEGMLZsloISA"/>
+      <semanticElements xmi:type="uml:Association" href="global.uml#_TgQm0GrWEeeEGMLZsloISA"/>
+      <semanticElements xmi:type="uml:Property" href="global.uml#_Tg5gAGrWEeeEGMLZsloISA"/>
+      <semanticElements xmi:type="uml:Property" href="global.uml#_TgvvAGrWEeeEGMLZsloISA"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_TiATQWrWEeeEGMLZsloISA" description="_qxo2AGk-EeeC1vVTHOWQSA" sourceArrow="FillDiamond">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_TiATQmrWEeeEGMLZsloISA" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_TiATQ2rWEeeEGMLZsloISA" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_TiATRGrWEeeEGMLZsloISA" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Association']"/>
     </ownedDiagramElements>

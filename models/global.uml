@@ -199,6 +199,16 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bYV4Fmn_EeemlvUik5kJvg" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TgQm0GrWEeeEGMLZsloISA" memberEnd="_TgvvAGrWEeeEGMLZsloISA _Tg5gAGrWEeeEGMLZsloISA" navigableOwnedEnd="_Tg5gAGrWEeeEGMLZsloISA">
+      <ownedEnd xmi:id="_TgvvAGrWEeeEGMLZsloISA" name="absPlayers" type="_QIFPYGk8EeeC1vVTHOWQSA" association="_TgQm0GrWEeeEGMLZsloISA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TgvvAWrWEeeEGMLZsloISA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TgvvAmrWEeeEGMLZsloISA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Tg5gAGrWEeeEGMLZsloISA" name="scoreboards" type="_pp1IEGn8EeemlvUik5kJvg" aggregation="composite" association="_TgQm0GrWEeeEGMLZsloISA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tg5gAWrWEeeEGMLZsloISA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tg5gAmrWEeeEGMLZsloISA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_952kYGk7EeeC1vVTHOWQSA" name="card">
     <packageImport xmi:id="_erVoAGk9EeeC1vVTHOWQSA">
