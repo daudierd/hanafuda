@@ -1,28 +1,30 @@
 /*******************************************************************************
  * 2017, All rights reserved.
  *******************************************************************************/
-package card;
+package card.states;
 
+import card.Card;
 import player.Player;
+// Start of user code (user defined imports)
 
 // End of user code
 
 /**
- * Description of Selected.
+ * Description of Playable.
  * 
  * @author Dorian
  */
-public class Selected implements CardState {
-	// Start of user code (user defined attributes for Selected)
+public class Playable extends AbsCardState implements CardState {
+	// Start of user code (user defined attributes for Playable)
 
 	// End of user code
 
 	/**
 	 * The constructor.
 	 */
-	public Selected() {
-		// Start of user code constructor for Selected)
-		super();
+	public Playable(Card c) {
+		// Start of user code constructor for Playable)
+		super(c);
 		// End of user code
 	}
 
@@ -82,7 +84,7 @@ public class Selected implements CardState {
 		// Start of user code for method lock
 		// End of user code
 	}
-	// Start of user code (user defined methods for Selected)
+	// Start of user code (user defined methods for Playable)
 
 	// End of user code
 }

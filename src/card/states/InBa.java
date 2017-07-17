@@ -1,29 +1,29 @@
 /*******************************************************************************
  * 2017, All rights reserved.
  *******************************************************************************/
-package card;
+package card.states;
 
+import card.Card;
 import player.Player;
-// Start of user code (user defined imports)
 
 // End of user code
 
 /**
- * Description of Playable.
+ * Description of InBa.
  * 
  * @author Dorian
  */
-public class Playable implements CardState {
-	// Start of user code (user defined attributes for Playable)
+public class InBa extends AbsCardState implements CardState {
+	// Start of user code (user defined attributes for InBa)
 
 	// End of user code
 
 	/**
 	 * The constructor.
 	 */
-	public Playable() {
-		// Start of user code constructor for Playable)
-		super();
+	public InBa(Card c) {
+		// Start of user code constructor for InBa)
+		super(c);
 		// End of user code
 	}
 
@@ -83,7 +83,8 @@ public class Playable implements CardState {
 		// Start of user code for method lock
 		// End of user code
 	}
-	// Start of user code (user defined methods for Playable)
+	
+	// Start of user code (user defined methods for InBa)
 
 	// End of user code
 }

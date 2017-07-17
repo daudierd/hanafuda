@@ -1,8 +1,9 @@
 /*******************************************************************************
  * 2017, All rights reserved.
  *******************************************************************************/
-package card;
+package card.states;
 
+import card.Card;
 import player.Player;
 
 // End of user code
@@ -12,7 +13,7 @@ import player.Player;
  * 
  * @author Dorian
  */
-public class InDeck implements CardState {
+public class InDeck extends AbsCardState implements CardState {
 	// Start of user code (user defined attributes for InDeck)
 
 	// End of user code
@@ -20,9 +21,9 @@ public class InDeck implements CardState {
 	/**
 	 * The constructor.
 	 */
-	public InDeck() {
+	public InDeck(Card c) {
 		// Start of user code constructor for InDeck)
-		super();
+		super(c);
 		// End of user code
 	}
 

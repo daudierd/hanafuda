@@ -1,28 +1,30 @@
 /*******************************************************************************
  * 2017, All rights reserved.
  *******************************************************************************/
-package card;
+package card.states;
 
+import card.Card;
 import player.Player;
+// Start of user code (user defined imports)
 
 // End of user code
 
 /**
- * Description of Locked.
+ * Description of Activated.
  * 
  * @author Dorian
  */
-public class Locked implements CardState {
-	// Start of user code (user defined attributes for Locked)
+public class Activated extends AbsCardState implements CardState {
+	// Start of user code (user defined attributes for Activated)
 
 	// End of user code
 
 	/**
 	 * The constructor.
 	 */
-	public Locked() {
-		// Start of user code constructor for Locked)
-		super();
+	public Activated(Card c) {
+		// Start of user code constructor for Activated)
+		super(c);
 		// End of user code
 	}
 
@@ -82,7 +84,34 @@ public class Locked implements CardState {
 		// Start of user code for method lock
 		// End of user code
 	}
-	// Start of user code (user defined methods for Locked)
+
+	// Start of user code (user defined methods for Activated)
 
 	// End of user code
+
+	/**
+	 * Description of InDeck.
+	 * 
+	 * @author Dorian
+	 */
+	public class InDeck {
+		// Start of user code (user defined attributes for InDeck)
+
+		// End of user code
+
+		/**
+		 * The constructor.
+		 */
+		public InDeck() {
+			// Start of user code constructor for InDeck)
+			super();
+			// End of user code
+		}
+
+		// Start of user code (user defined methods for InDeck)
+
+		// End of user code
+
+	}
+
 }

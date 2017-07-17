@@ -3,11 +3,8 @@
  *******************************************************************************/
 package card;
 
-import java.util.HashSet;
-
+import card.states.*;
 import player.Player;
-
-// End of user code
 
 /**
  * Description of Card.
@@ -15,31 +12,39 @@ import player.Player;
  * @author Dorian
  */
 public class Card implements CardState, CardEvent {
-	/**
-	 * Description of the property name.
-	 */
-	public String name = "";
+	/** Indicative name given to a card. */
+	private String name;
 
-	/**
-	 * Description of the property suit.
-	 */
-	public Suit suit = null;
+	/** Suit that the card belongs to, represented by a calendar month. */
+	private Suit suit;
 
-	/**
-	 * Description of the property cardStates.
+	/* 
+	 * Card states used to implement the state machine pattern
 	 */
-	public HashSet<CardState> cardStates = new HashSet<CardState>();
+	/** State of the card that is still in the deck. */
+	public final CardState IN_DECK = new InDeck(this);
+	/** State of the card that is in the Ba. */
+	public final CardState IN_BA = new InBa(this);
+	/** State of the card that is can be played by the current player. */
+	public final CardState PLAYABLE = new Playable(this);
+	/** State of the card that has been selected for a match. */
+	public final CardState SELECTED = new Selected(this);
+	/** State of the card that can be played from the Ba. */
+	public final CardState ACTIVATED = new Activated(this);
+	/** State of the card in a player's hand that cannot be played. */
+	public final CardState LOCKED = new Locked(this);
+	/** State of the card that a player has won. */
+	public final CardState SCORED = new Scored(this);
+	
+	/** Current state of the card. */
+	private CardState currentState;
+	
+	/** Value of the card in points. */
+	private int value;
 
-	/**
-	 * Description of the property value.
-	 */
-	public int value = 0;
-
-	/**
-	 * Description of the property id.
-	 */
-	public int id = 0;
-
+	/** Unique id used to identify a card. */
+	private int id;
+	
 	// Start of user code (user defined attributes for Card)
 
 	// End of user code
@@ -164,13 +169,19 @@ public class Card implements CardState, CardEvent {
 	}
 
 	/**
-	 * Returns cardStates.
-	 * @return cardStates 
+	 * @return the currentState
 	 */
-	public HashSet<CardState> getCardStates() {
-		return this.cardStates;
+	public CardState getCurrentState() {
+		return currentState;
 	}
 
+	/**
+	 * @param currentState the currentState to set
+	 */
+	public void setCurrentState(CardState currentState) {
+		this.currentState = currentState;
+	}
+	
 	/**
 	 * Returns value.
 	 * @return value 

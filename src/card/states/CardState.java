@@ -1,7 +1,7 @@
 /*******************************************************************************
  * 2017, All rights reserved.
  *******************************************************************************/
-package card;
+package card.states;
 
 import player.Player;
 // Start of user code (user defined imports)
